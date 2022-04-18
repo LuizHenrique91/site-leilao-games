@@ -12,12 +12,14 @@
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/botao.css">
     <link rel="stylesheet" href="./css/produto-leilao.css">
     <link rel="stylesheet" href="./css/ultimos-lances.css">
     <link rel="stylesheet" href="./css/produto-descricao.css">
+    <link rel="stylesheet" href="./css/perguntas.css">
     <link rel="stylesheet" href="./css/rodape.css">
     <link rel="stylesheet" href="./css/modal-login.css">
-    <link rel="stylesheet" href="./css/modal-cadastro.css">
+    <link rel="stylesheet" href="./css/modal-lance.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
@@ -28,19 +30,79 @@
     <!--Cabeçalho-->
     <header class="cabecalho container">
       <nav class="cabecalho__navegacao">
-        <img src="img/7131064467_8be94656-98b5-4620-b9f6-30c681b283dd.png" alt="Logo Site" class="cabecalho__logo">
+        <a href="index.html"><img src="img/7131064467_8be94656-98b5-4620-b9f6-30c681b283dd.png" alt="Logo Site" class="cabecalho__logo"></a>
         <ul class="cabecalho__lista">
           <li class="cabecalho__item"><a href="#" class="cabecalho__link">Home</a></li>
           <li class="cabecalho__item"><a href="#" class="cabecalho__link">Itens em Leilão</a></li>
           <li class="cabecalho__item"><a href="#perguntas" class="cabecalho__link">Perguntas</a></li>
         </ul>
-        <input type="button" value="Cadastrar-se/Login" class="cabecalho__botao btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+        <input type="button" value="Cadastrar-se/Login" class="botao btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
       </nav>
-      <input type="search" class="cabecalho__busca" placeholder="Pesquise aqui">
+      <div class="cabecalho__busca-botao">
+        <input type="search" class="cabecalho__busca" placeholder="Pesquise aqui">
+        <a href="cadastroproduto.html"><input type="button" value="Criar Oferta" class="botao__oferta botao"></a>
+      </div>
+      
     </header>
     <!--Fim Cabeçalho-->
     <!--Corpo-->
     <main class="container">
+      <!--Modal Login-->
+      <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="" class="modal-login">
+                <label for="email">Login</label>
+                <input type="email" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" name="" id="senha">
+                <a href="#">Esqueceu a senha</a>
+                <p>Ainda não tem Cadastro? <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoCadastro" id="cadastro">Clique aqui</a></p>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fim Modal Login-->
+      <!--Modal Cadastro-->
+      <div class="modal fade" id="ExemploModalCentralizadoCadastro" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="TituloModalCentralizado">Cadastro</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="" class="modal-login">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+                <label for="emailCAdastro">E-mail</label>
+                <input type="email" id="emailCAdastro">
+                <label for="senhaCadastro">Senha</label>
+                <input type="password" id="senhaCadastro">
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary">Cadastrar-se</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fim Modal Cadastro-->
       <h1>Far Cry 6</h1>
       <section class="produto-leilao">
         <!--Carrossel de fotos do produto-->
@@ -62,7 +124,7 @@
         <div class="produto-leilao__bloco">
           <div>
             <h3>Aberto</h3>
-            <h4>Maior Lance: <span class="produto-leilao__preco">R$ 320,00</span></h4>
+            <h4>Maior Lance: <span class="produto-leilao__preco">R$ 120,00</span></h4>
             <!--Tabela informações Leilão-->
             <table class="produto-leilao__tabela">
               <tr>
@@ -114,8 +176,43 @@
                   <td class="ultimos-lances__coluna">11/04/22 10:36:00</td>
                   <td class="ultimos-lances__coluna">Kaio</td>
                 </tr>
+                <tr>
+                  <td class="ultimos-lances__coluna">R$ 80,00</td>
+                  <td class="ultimos-lances__coluna">01/04/22 9:25:00</td>
+                  <td class="ultimos-lances__coluna">Luiz</td>
+                </tr>
+                <tr>
+                  <td class="ultimos-lances__coluna">R$ 50,00</td>
+                  <td class="ultimos-lances__coluna">05/03/22 22:25:00</td>
+                  <td class="ultimos-lances__coluna">Steph</td>
+                </tr>
               </tbody>
             </table>
+            <button class="botao botao--borda btn btn-primary" data-toggle="modal" data-target="#modalLance">Dar lance</button>
+            <!--Modal dar Lance-->
+            <div class="modal fade" id="modalLance" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="" class="modal-lance">
+                      <h3>Informe seu Lance</h3>
+                      <input type="text">
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Dar Lance</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fim Modal dar Lance-->
           </div>
           <!--Fim Lances-->
         </div>
@@ -137,6 +234,17 @@
         </p>
       </section>
       <!--Fim Descrição do Produto-->
+      <section class="perguntas" id="perguntas">
+        <div class="perguntas__bloco">
+          <h4 class="perguntas__titulo">Perguntas <span class="perguntas__titulo--seguinte">frequentes</span></h4>
+          <ul class="perguntas__lista">
+            <li class="perguntas__item"><a href="#" class="perguntas__link">Como Funciona o Leilão?</a></li>
+            <li class="perguntas__item"><a href="#" class="perguntas__link">Posso trocar meu produto depois de adquirido?</a></li>
+            <li class="perguntas__item"><a href="#" class="perguntas__link">O produto é enviado por alguma transportadora?</a></li>
+          </ul>
+        </div>  
+      </section>
+      <!--Fim Perguntas-->
     </main>
     <!--Fim Corpo-->
     <!--Rodapé-->
