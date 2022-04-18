@@ -1,0 +1,23 @@
+.cadastro-produto__titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cadastro-produto__form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+textarea, input:focus{
+  box-shadow: none;
+  outline: none;
+}
+
+.cadastro-produto__coluna {
+  margin-top: 2rem;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 20% 20%;
+  gap: 1rem;
+}

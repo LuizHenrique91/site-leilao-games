@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <!--CSS Reset-->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cabecalho.css">
+  <link rel="stylesheet" href="./css/botao.css">
+  <link rel="stylesheet" href="./css/cadastro-produto.css">
+  <link rel="stylesheet" href="./css/perguntas.css">
+  <link rel="stylesheet" href="./css/rodape.css">
+  <link rel="stylesheet" href="./css/modal-login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0221ca4ba5.js" crossorigin="anonymous"></script>
+  <title>Leilão Games</title>
+</head>
+  <body>
+    <!--Cabeçalho-->
+    <header class="cabecalho container">
+      <nav class="cabecalho__navegacao">
+        <a href="index.html"><img src="img/7131064467_8be94656-98b5-4620-b9f6-30c681b283dd.png" alt="Logo Site" class="cabecalho__logo"></a>
+        <ul class="cabecalho__lista">
+          <li class="cabecalho__item"><a href="#" class="cabecalho__link">Home</a></li>
+          <li class="cabecalho__item"><a href="#" class="cabecalho__link">Itens em Leilão</a></li>
+          <li class="cabecalho__item"><a href="#perguntas" class="cabecalho__link">Perguntas</a></li>
+        </ul>
+        <input type="button" value="Cadastrar-se/Login" class="botao btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+      </nav>
+      <div class="cabecalho__busca-botao">
+        <input type="search" class="cabecalho__busca" placeholder="Pesquise aqui">
+        <a href="cadastroproduto.html"><input type="button" value="Criar Oferta" class="botao__oferta botao"></a>
+      </div>
+    </header>
+    <!--Fim Cabeçalho-->
+    <!--Corpo-->
+    <main class="container">
+      <section>
+        <h2 class="cadastro-produto__titulo">Cadastro de Produto</h2>
+        <form action="" class="cadastro-produto__form">
+          <label for="nome">Nome do Produto</label>
+          <input type="text" id="nome">
+          <label for="descricao">Descrição do Produto</label>
+          <textarea name="" id="descricao" cols="30" rows="10"></textarea>
+          <label for="imagem">Imagem</label>
+          <input type="file" id="imagem">
+          <div class="cadastro-produto__coluna">
+            <label for="lance">Lance Inicial</label>
+            <input type="text" id="lance">
+            <label for="incremento">Incremento Mínimo</label>
+            <input type="number" id="incremento">
+            <label for="data-abertura">Data de Abertura</label>
+            <input type="datetime-local" id="data-abertura">
+            <label for="data-encerramento">Data de Encerramento</label>
+            <input type="datetime-local" id="data-encerramento">
+          </div>
+        </form>
+      </section>
+    </main>
+    <!--Fim Corpo-->
+    <!--Rodapé-->
+    <footer class="rodape container">
+      <img src="img/7131064467_8be94656-98b5-4620-b9f6-30c681b283dd.png" alt="Logo do Rodapé" class="rodape__logo">
+      <address class="rodape__endereco">
+        <p class="rodape__titulo">Endereço</p>
+        <span>São Paulo</span>
+        Rua Anita Garibaldi, 33, 13<br>
+        Sé<br>
+        Telefone: (11) 99875-2201<br>
+      </address>
+      <div>
+        <p class="rodape__titulo">Formas de Pagamento</p>
+        <img src="img/bandeiras_cartoes.png" alt="Bandeiras de Cartões">
+        <p class="rodape__titulo">Redes Sociais</p>
+        <i class="fa-brands fa-instagram rodape__social rodape__social--insta"></i>
+        <i class="fa-brands fa-facebook rodape__social rodape__social--face"></i>
+        <i class="fa-brands fa-twitter rodape__social rodape__social--twitter"></i>
+        <i class="fa-brands fa-whatsapp-square rodape__social rodape__social--whats"></i>
+      </div>
+    </footer>
+    <!--Fim Rodapé-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
