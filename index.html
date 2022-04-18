@@ -38,81 +38,88 @@
       </nav>
       <input type="search" class="cabecalho__busca" placeholder="Pesquise aqui">
     </header>
+    <!--Fim Cabeçalho-->
     <!--Corpo-->
     <main class="container">
-      <!-- Modal Login-->
-    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form action="" class="login">
-              <label for="email">Login</label>
-              <input type="email" id="email">
-              <label for="senha">Senha</label>
-              <input type="password" name="" id="senha">
-              <a href="#">Esqueceu a senha</a>
-              <p>Ainda não tem Cadastro? <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoCadastro" id="cadastro">Clique aqui</a></p>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Salvar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal Cadastro-->
-    <div class="modal fade" id="ExemploModalCentralizadoCadastro" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="TituloModalCentralizado">Cadastro</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form action="" class="modal-cadastro">
-              <label for="nome">Nome</label>
-              <input type="text" id="nome">
-              <label for="emailCAdastro">E-mail</label>
-              <input type="email" id="emailCAdastro">
-              <label for="senhaCadastro">Senha</label>
-              <input type="password" id="senhaCadastro">
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Cadastrar-se</button>
+      <!--Modal Login-->
+      <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="" class="modal-login">
+                <label for="email">Login</label>
+                <input type="email" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" name="" id="senha">
+                <a href="#">Esqueceu a senha</a>
+                <p>Ainda não tem Cadastro? <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoCadastro" id="cadastro">Clique aqui</a></p>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary">Salvar</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-      <section class="corpo__banner">
-        <img src="img/imagemPrincipal.webp" alt="" class="corpo__imagem1">
-        <img src="img/imagem1.jpg" alt="" class="corpo__imagem2 corpo__imagem">
-        <img src="img/imagem2.png" alt="" class="corpo__imagem3 corpo__imagem">
-        <img src="img/imagem3.jpg" alt="" class="corpo__imagem4 corpo__imagem">
-        <img src="img/imagem4.jpg" alt="" class="corpo__imagem5 corpo__imagem">
+      <!--Fim Modal Login-->
+      <!--Modal Cadastro-->
+      <div class="modal fade" id="ExemploModalCentralizadoCadastro" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="TituloModalCentralizado">Cadastro</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="" class="modal-cadastro">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+                <label for="emailCAdastro">E-mail</label>
+                <input type="email" id="emailCAdastro">
+                <label for="senhaCadastro">Senha</label>
+                <input type="password" id="senhaCadastro">
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary">Cadastrar-se</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fim Modal Cadastro-->
+      <!--Banner Principal-->
+      <section class="banner-principal">
+        <img src="img/imagemPrincipal.webp" alt="Banner Produto" class="banner-principal__imagem1">
+        <img src="img/imagem1.jpg" alt="Banner Produto" class="banner-principal__imagem2 banner-principal__imagem">
+        <img src="img/imagem2.png" alt="Banner Produto" class="banner-principal__imagem3 banner-principal__imagem">
+        <img src="img/imagem3.jpg" alt="Banner Produto" class="banner-principal__imagem4 banner-principal__imagem">
+        <img src="img/imagem4.jpg" alt="Banner Produto" class="banner-principal__imagem5 banner-principal__imagem">
       </section>
-      <section class="banner-meio">
+      <!--Fim Banner Principal-->
+      <!--Banners Meio da Página-->
+      <section>
         <h3 class="banner-meio__titulo">Jogos</h3>
-        <img src="img/Group 1416.png" alt="" class="banner-meio__imagem">
+        <img src="img/Group 1416.png" alt="Banner de Jogos" class="banner-meio__imagem">
       </section>
-      <section class="banner-meio">
+      <section>
         <h3 class="banner-meio__titulo">Periféricos</h3>
-        <img src="img/banner-meio2.jpg" alt="" class="banner-meio__imagem">
+        <img src="img/banner-meio2.jpg" alt="Banner de Periféricos" class="banner-meio__imagem">
       </section>
+      <!-- Fim Banners Meio da Página-->
+      <!--Perguntas-->
       <section class="perguntas" id="perguntas">
-        <div class="perguntas__container">
-          <h4 class="perguntas__titulo">Perguntas <span class="perguntas__titulo-seguinte">frequentes</span></h4>
+        <div class="perguntas__bloco">
+          <h4 class="perguntas__titulo">Perguntas <span class="perguntas__titulo--seguinte">frequentes</span></h4>
           <ul class="perguntas__lista">
             <li class="perguntas__item"><a href="#" class="perguntas__link">Como Funciona o Leilão?</a></li>
             <li class="perguntas__item"><a href="#" class="perguntas__link">Posso trocar meu produto depois de adquirido?</a></li>
@@ -120,11 +127,12 @@
           </ul>
         </div>  
       </section>
+      <!--Fim Perguntas-->
     </main>
-    
+    <!--Fim Corpo-->
     <!--Rodapé-->
     <footer class="rodape container">
-      <img src="img/7131064467_8be94656-98b5-4620-b9f6-30c681b283dd.png" alt="" class="rodape__logo">
+      <img src="img/7131064467_8be94656-98b5-4620-b9f6-30c681b283dd.png" alt="Logo do Rodapé" class="rodape__logo">
       <address class="rodape__endereco">
         <p class="rodape__titulo">Endereço</p>
         <span>São Paulo</span>
@@ -134,7 +142,7 @@
       </address>
       <div>
         <p class="rodape__titulo">Formas de Pagamento</p>
-        <img src="img/bandeiras_cartoes.png" alt="">
+        <img src="img/bandeiras_cartoes.png" alt="Bandeiras de Cartões">
         <p class="rodape__titulo">Redes Sociais</p>
         <i class="fa-brands fa-instagram rodape__social rodape__social--insta"></i>
         <i class="fa-brands fa-facebook rodape__social rodape__social--face"></i>
@@ -142,6 +150,7 @@
         <i class="fa-brands fa-whatsapp-square rodape__social rodape__social--whats"></i>
       </div>
     </footer>
+    <!--Fim Rodapé-->
     <script src="js/modal-cadastro.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

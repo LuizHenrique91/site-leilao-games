@@ -1,4 +1,4 @@
-.perguntas__container {
+.perguntas__bloco {
   width: 70%;
   margin: auto;
 }
@@ -8,7 +8,7 @@
   font-size: 2rem;
   margin-top: 5rem;
 }
-.perguntas__titulo-seguinte {
+.perguntas__titulo--seguinte {
   color: var(--light);
 }
 
