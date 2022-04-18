@@ -12,9 +12,11 @@
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/cabecalho.css">
-    <link rel="stylesheet" href="./css/leilao-informacoes.css">
+    <link rel="stylesheet" href="./css/produto-leilao.css">
+    <link rel="stylesheet" href="./css/ultimos-lances.css">
+    <link rel="stylesheet" href="./css/produto-descricao.css">
     <link rel="stylesheet" href="./css/rodape.css">
-    <link rel="stylesheet" href="css/modal-login.css">
+    <link rel="stylesheet" href="./css/modal-login.css">
     <link rel="stylesheet" href="./css/modal-cadastro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +30,7 @@
       <nav class="cabecalho__navegacao">
         <img src="img/7131064467_8be94656-98b5-4620-b9f6-30c681b283dd.png" alt="Logo Site" class="cabecalho__logo">
         <ul class="cabecalho__lista">
-          <li class="cabecalho__item"><a href="./index.html" class="cabecalho__link">Home</a></li>
+          <li class="cabecalho__item"><a href="#" class="cabecalho__link">Home</a></li>
           <li class="cabecalho__item"><a href="#" class="cabecalho__link">Itens em Leilão</a></li>
           <li class="cabecalho__item"><a href="#perguntas" class="cabecalho__link">Perguntas</a></li>
         </ul>
@@ -36,62 +38,110 @@
       </nav>
       <input type="search" class="cabecalho__busca" placeholder="Pesquise aqui">
     </header>
-
-    <!--Cabeçalho-->
+    <!--Fim Cabeçalho-->
+    <!--Corpo-->
     <main class="container">
       <h1>Far Cry 6</h1>
-      <section class="leilao-informacoes">
+      <section class="produto-leilao">
+        <!--Carrossel de fotos do produto-->
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active leilao-informacoes__imagem">
+            <div class="carousel-item active produto-leilao__imagem">
               <img class="d-block w-100" src="img/farcry/4136965573_1.webp" alt="First slide">
             </div>
-            <div class="carousel-item leilao-informacoes__imagem">
+            <div class="carousel-item produto-leilao__imagem">
               <img class="d-block w-100" src="img/farcry/4136965573_2.webp" alt="Second slide">
             </div>
-            <div class="carousel-item leilao-informacoes__imagem">
+            <div class="carousel-item produto-leilao__imagem">
               <img class="d-block w-100" src="img/farcry/4136965573_3.webp" alt="Third slide">
             </div>
           </div>
         </div>
-        <div class="leilao-informacoes__dados">
-          <h3>Aberto</h3>
-          <h4>Maior Lance: R$ 320,00</h4>
-          <table class="leilao-informacoes__tabela">
-            <tbody>
+        <!--Fim Carrossel-->
+        <!--Dados do Leilão-->
+        <div class="produto-leilao__bloco">
+          <div>
+            <h3>Aberto</h3>
+            <h4>Maior Lance: <span class="produto-leilao__preco">R$ 320,00</span></h4>
+            <!--Tabela informações Leilão-->
+            <table class="produto-leilao__tabela">
               <tr>
                 <td>Leiloeiro</td>
-                <td class="leilao-informacoes__coluna">Amanda</td>
+                <td class="produto-leilao__coluna">Amanda</td>
               </tr>
               <tr>
                 <td>Data</td>
-                <td class="leilao-informacoes__coluna">09/04/2022 17:20:18</td>
+                <td class="produto-leilao__coluna">09/04/2022 17:20:18</td>
               </tr>
               <tr>
                 <td>Lance Inicial</td>
-                <td class="leilao-informacoes__coluna">R$ 120,00</td>
+                <td class="produto-leilao__coluna">R$ 40,00</td>
               </tr>
               <tr>
                 <td>Incremento Min:</td>
-                <td class="leilao-informacoes__coluna">R$ 40,00</td>
+                <td class="produto-leilao__coluna">R$ 10,00</td>
               </tr>
               <tr>
                 <td>Qtd de Lances</td>
-                <td class="leilao-informacoes__coluna">8</td>
+                <td class="produto-leilao__coluna">8</td>
               </tr>
               <tr>
                 <td>Encerramento</td>
-                <td class="leilao-informacoes__coluna">25/04/2022 17:00:15</td>
+                <td class="produto-leilao__coluna">25/04/2022 17:00:15</td>
               </tr>
-            </tbody>
-          </table>
+            </table>
+            <!--Fim Tabela informações Leilão-->
+          </div>
+          <!--Lances-->
+          <div class="ultimos-lances">
+            <h4>Últimos Lances</h4>
+            <table class="ultimos-lances__tabela">
+              <thead>
+                <tr>
+                  <th class="ultimos-lances__coluna">Valor</th>
+                  <th class="ultimos-lances__coluna">Data</th>
+                  <th class="ultimos-lances__coluna">Usuario</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="ultimos-lances__coluna">R$ 120,00</td>
+                  <td class="ultimos-lances__coluna">13/04/22 12:26:35</td>
+                  <td class="ultimos-lances__coluna">Steph</td>
+                </tr>
+                <tr>
+                  <td class="ultimos-lances__coluna">R$ 100,00</td>
+                  <td class="ultimos-lances__coluna">11/04/22 10:36:00</td>
+                  <td class="ultimos-lances__coluna">Kaio</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--Fim Lances-->
         </div>
+        <!--Fim Dados do Leilão-->
       </section>
-    </main>
+      <!--Descrição do Produto-->
+      <section class="produto-descricao">
+        <h3 class="produto-descricao__titulo">Detalhes</h3>
+        <p class="produto-descricao__texto">
+          Gênero:
+          - Mundo Aberto / Tiro / Narrativa
 
+          Plataformas:
+          - Xbox
+
+          Junte-se à revolução e enfrente o regime opressor do ditador Antón Castillo e seu filho adolescente Diego, interpretados por Giancarlo Esposito (The Mandalorian, Breaking Bad) e Anthony Gonzalez (Coco).
+          Mergulhe em uma experiência cinematográfica como Dani Rojas, habitante de Yara que defende seu país contra um governo tirano. Escolha jogar como Dani homem ou mulher e mergulhe na jornada de alguém que saiu do exército para entrar na guerrilha revolucionária.
+          Conheça um elenco variado de personagens inesquecíveis no mundo vibrante de Yara, desde Juan Cortez, um patético ex-espião da kgb e seu crocodilo de estimação Guapo, até o irresistível cãozinho salsicha chamado Chorizo.
+        </p>
+      </section>
+      <!--Fim Descrição do Produto-->
+    </main>
+    <!--Fim Corpo-->
     <!--Rodapé-->
     <footer class="rodape container">
-      <img src="img/7131064467_8be94656-98b5-4620-b9f6-30c681b283dd.png" alt="" class="rodape__logo">
+      <img src="img/7131064467_8be94656-98b5-4620-b9f6-30c681b283dd.png" alt="Logo do Rodapé" class="rodape__logo">
       <address class="rodape__endereco">
         <p class="rodape__titulo">Endereço</p>
         <span>São Paulo</span>
@@ -101,7 +151,7 @@
       </address>
       <div>
         <p class="rodape__titulo">Formas de Pagamento</p>
-        <img src="img/bandeiras_cartoes.png" alt="">
+        <img src="img/bandeiras_cartoes.png" alt="Bandeiras de Cartões">
         <p class="rodape__titulo">Redes Sociais</p>
         <i class="fa-brands fa-instagram rodape__social rodape__social--insta"></i>
         <i class="fa-brands fa-facebook rodape__social rodape__social--face"></i>
@@ -109,6 +159,7 @@
         <i class="fa-brands fa-whatsapp-square rodape__social rodape__social--whats"></i>
       </div>
     </footer>
+    <!--Fim Rodapé-->
     <script src="js/cronometro.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
