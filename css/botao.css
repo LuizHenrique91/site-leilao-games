@@ -1,0 +1,22 @@
+.botao {
+  background-color: var(--primary);
+  border: none;
+  padding: 12px 30px;
+  color: var(--dark);
+  font-family: inherit;
+}
+
+.botao--borda{
+  cursor: pointer;
+  width: 70%;
+  margin-top: 1rem;
+}
+
+.botao--borda:focus{
+  outline: none;
+}
+
+.botao__oferta {
+  width: 10rem;
+  height: 100%;
+}
