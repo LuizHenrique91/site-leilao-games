@@ -1,0 +1,11 @@
+.ultimos-lances {
+  margin-top: 2rem;
+}
+
+.ultimos-lances__tabela {
+  width: 100%;
+}
+
+.ultimos-lances__coluna {
+  border: 1px solid white;
+}

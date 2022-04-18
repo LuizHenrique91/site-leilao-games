@@ -1,0 +1,12 @@
+.produto-descricao {
+  margin-top: 5rem;
+  width: 80%;
+}
+
+.produto-descricao__titulo {
+  font-size: 2rem;
+}
+
+.produto-descricao__texto {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,27 @@
+.produto-leilao {
+  display: flex;
+}
+
+.produto-leilao__imagem {
+  width: 500px;
+  height: 500px;
+}
+
+.produto-leilao__bloco {
+  padding-left: 2rem;
+}
+
+.produto-leilao__preco {
+  font-size: 2rem;
+}
+
+.produto-leilao__tabela {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.produto-leilao__coluna {
+  padding-left: 1.5rem;
+  color: var(--light);
+}
