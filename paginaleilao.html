@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <!--CSS Reset-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/leilao-informacoes.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+    <link rel="stylesheet" href="css/modal-login.css">
+    <link rel="stylesheet" href="./css/modal-cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0221ca4ba5.js" crossorigin="anonymous"></script>
+    <title>Leilão Games</title>
+  </head>
+  <body>
+    <!--Cabeçalho-->
+    <header class="cabecalho container">
+      <nav class="cabecalho__navegacao">
+        <img src="img/7131064467_8be94656-98b5-4620-b9f6-30c681b283dd.png" alt="Logo Site" class="cabecalho__logo">
+        <ul class="cabecalho__lista">
+          <li class="cabecalho__item"><a href="./index.html" class="cabecalho__link">Home</a></li>
+          <li class="cabecalho__item"><a href="#" class="cabecalho__link">Itens em Leilão</a></li>
+          <li class="cabecalho__item"><a href="#perguntas" class="cabecalho__link">Perguntas</a></li>
+        </ul>
+        <input type="button" value="Cadastrar-se/Login" class="cabecalho__botao btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+      </nav>
+      <input type="search" class="cabecalho__busca" placeholder="Pesquise aqui">
+    </header>
+
+    <!--Cabeçalho-->
+    <main class="container">
+      <h1>Far Cry 6</h1>
+      <section class="leilao-informacoes">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active leilao-informacoes__imagem">
+              <img class="d-block w-100" src="img/farcry/4136965573_1.webp" alt="First slide">
+            </div>
+            <div class="carousel-item leilao-informacoes__imagem">
+              <img class="d-block w-100" src="img/farcry/4136965573_2.webp" alt="Second slide">
+            </div>
+            <div class="carousel-item leilao-informacoes__imagem">
+              <img class="d-block w-100" src="img/farcry/4136965573_3.webp" alt="Third slide">
+            </div>
+          </div>
+        </div>
+        <div class="leilao-informacoes__dados">
+          <h3>Aberto</h3>
+          <h4>Maior Lance: R$ 320,00</h4>
+          <table class="leilao-informacoes__tabela">
+            <tbody>
+              <tr>
+                <td>Leiloeiro</td>
+                <td class="leilao-informacoes__coluna">Amanda</td>
+              </tr>
+              <tr>
+                <td>Data</td>
+                <td class="leilao-informacoes__coluna">09/04/2022 17:20:18</td>
+              </tr>
+              <tr>
+                <td>Lance Inicial</td>
+                <td class="leilao-informacoes__coluna">R$ 120,00</td>
+              </tr>
+              <tr>
+                <td>Incremento Min:</td>
+                <td class="leilao-informacoes__coluna">R$ 40,00</td>
+              </tr>
+              <tr>
+                <td>Qtd de Lances</td>
+                <td class="leilao-informacoes__coluna">8</td>
+              </tr>
+              <tr>
+                <td>Encerramento</td>
+                <td class="leilao-informacoes__coluna">25/04/2022 17:00:15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!--Rodapé-->
+    <footer class="rodape container">
+      <img src="img/7131064467_8be94656-98b5-4620-b9f6-30c681b283dd.png" alt="" class="rodape__logo">
+      <address class="rodape__endereco">
+        <p class="rodape__titulo">Endereço</p>
+        <span>São Paulo</span>
+        Rua Anita Garibaldi, 33, 13<br>
+        Sé<br>
+        Telefone: (11) 99875-2201<br>
+      </address>
+      <div>
+        <p class="rodape__titulo">Formas de Pagamento</p>
+        <img src="img/bandeiras_cartoes.png" alt="">
+        <p class="rodape__titulo">Redes Sociais</p>
+        <i class="fa-brands fa-instagram rodape__social rodape__social--insta"></i>
+        <i class="fa-brands fa-facebook rodape__social rodape__social--face"></i>
+        <i class="fa-brands fa-twitter rodape__social rodape__social--twitter"></i>
+        <i class="fa-brands fa-whatsapp-square rodape__social rodape__social--whats"></i>
+      </div>
+    </footer>
+    <script src="js/cronometro.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

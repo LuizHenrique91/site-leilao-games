@@ -1,0 +1,39 @@
+.rodape {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--light);
+}
+
+.rodape__logo {
+  width: 300px;
+  height: 115px;
+}
+
+.rodape__endereco {
+  line-height: 1.5rem;
+}
+
+.rodape__titulo {
+  color: var(--primary);
+}
+
+.rodape__social {
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.rodape__social--insta {
+  color: #cb77c4;
+}
+
+.rodape__social--face {
+  color: #295c9e;
+}
+
+.rodape__social--twitter {
+  color: #1daadf;
+}
+
+.rodape__social--whats {
+  color: #4fcd5c;
+}

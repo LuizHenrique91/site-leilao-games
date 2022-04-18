@@ -1,0 +1,38 @@
+.corpo__banner {
+  display: grid;
+  grid-template: 
+    "produto-principal imagem1 imagem2"
+    "produto-principal imagem3 imagem4";
+    justify-content: center;
+    gap: 1rem;
+}
+
+.corpo__imagem {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.corpo__imagem1 {
+  grid-area: produto-principal;
+  width: 500px;
+  height: -webkit-fill-available;
+  border-radius: 10px;
+}
+
+.corpo__imagem2 {
+  grid-area: imagem1;
+}
+
+.corpo__imagem3 {
+  grid-area: imagem2;
+}
+
+.corpo__imagem4 {
+  grid-area: imagem3;
+}
+
+.corpo__imagem5 {
+  grid-area: imagem4;
+}
+

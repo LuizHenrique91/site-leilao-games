@@ -1,0 +1,12 @@
+.banner-meio__titulo {
+  color: var(--primary);
+  font-size: 3rem;
+  margin-top: 4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid white;
+}
+
+.banner-meio__imagem {
+  margin-top: 2rem;
+  width: -webkit-fill-available;
+}

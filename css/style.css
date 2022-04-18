@@ -1,0 +1,22 @@
+:root{
+  --primary: #9BF00B;
+  --dark: #0C0C0C;
+  --gray-light: #1C1C1C;
+  --gray: #777777;
+  --light: #FFFFFF;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1920px;
+  margin: auto;
+  background: #0C0C0C;
+  font-family: 'Inter', sans-serif, 'Courier New', Courier, monospace;
+  color: var(--light);
+}
+.container {
+  max-width: 1500px;
+  margin: auto;
+  padding: 3rem 2rem;
+}

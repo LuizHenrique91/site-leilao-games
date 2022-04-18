@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <!--CSS Reset-->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cabecalho.css">
+  <link rel="stylesheet" href="./css/banner-principal.css">
+  <link rel="stylesheet" href="./css/banner-meio.css">
+  <link rel="stylesheet" href="./css/perguntas.css">
+  <link rel="stylesheet" href="./css/rodape.css">
+  <link rel="stylesheet" href="css/modal-login.css">
+  <link rel="stylesheet" href="./css/modal-cadastro.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0221ca4ba5.js" crossorigin="anonymous"></script>
+  <title>Leilão Games</title>
+</head>
+  <body>
+    <!--Cabeçalho-->
+    <header class="cabecalho container">
+      <nav class="cabecalho__navegacao">
+        <img src="img/7131064467_8be94656-98b5-4620-b9f6-30c681b283dd.png" alt="Logo Site" class="cabecalho__logo">
+        <ul class="cabecalho__lista">
+          <li class="cabecalho__item"><a href="#" class="cabecalho__link">Home</a></li>
+          <li class="cabecalho__item"><a href="#" class="cabecalho__link">Itens em Leilão</a></li>
+          <li class="cabecalho__item"><a href="#perguntas" class="cabecalho__link">Perguntas</a></li>
+        </ul>
+        <input type="button" value="Cadastrar-se/Login" class="cabecalho__botao btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+      </nav>
+      <input type="search" class="cabecalho__busca" placeholder="Pesquise aqui">
+    </header>
+    <!--Corpo-->
+    <main class="container">
+      <!-- Modal Login-->
+    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="login">
+              <label for="email">Login</label>
+              <input type="email" id="email">
+              <label for="senha">Senha</label>
+              <input type="password" name="" id="senha">
+              <a href="#">Esqueceu a senha</a>
+              <p>Ainda não tem Cadastro? <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoCadastro" id="cadastro">Clique aqui</a></p>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Salvar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Cadastro-->
+    <div class="modal fade" id="ExemploModalCentralizadoCadastro" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Cadastro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="modal-cadastro">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome">
+              <label for="emailCAdastro">E-mail</label>
+              <input type="email" id="emailCAdastro">
+              <label for="senhaCadastro">Senha</label>
+              <input type="password" id="senhaCadastro">
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Cadastrar-se</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <section class="corpo__banner">
+        <img src="img/imagemPrincipal.webp" alt="" class="corpo__imagem1">
+        <img src="img/imagem1.jpg" alt="" class="corpo__imagem2 corpo__imagem">
+        <img src="img/imagem2.png" alt="" class="corpo__imagem3 corpo__imagem">
+        <img src="img/imagem3.jpg" alt="" class="corpo__imagem4 corpo__imagem">
+        <img src="img/imagem4.jpg" alt="" class="corpo__imagem5 corpo__imagem">
+      </section>
+      <section class="banner-meio">
+        <h3 class="banner-meio__titulo">Jogos</h3>
+        <img src="img/Group 1416.png" alt="" class="banner-meio__imagem">
+      </section>
+      <section class="banner-meio">
+        <h3 class="banner-meio__titulo">Periféricos</h3>
+        <img src="img/banner-meio2.jpg" alt="" class="banner-meio__imagem">
+      </section>
+      <section class="perguntas" id="perguntas">
+        <div class="perguntas__container">
+          <h4 class="perguntas__titulo">Perguntas <span class="perguntas__titulo-seguinte">frequentes</span></h4>
+          <ul class="perguntas__lista">
+            <li class="perguntas__item"><a href="#" class="perguntas__link">Como Funciona o Leilão?</a></li>
+            <li class="perguntas__item"><a href="#" class="perguntas__link">Posso trocar meu produto depois de adquirido?</a></li>
+            <li class="perguntas__item"><a href="#" class="perguntas__link">O produto é enviado por alguma transportadora?</a></li>
+          </ul>
+        </div>  
+      </section>
+    </main>
+    
+    <!--Rodapé-->
+    <footer class="rodape container">
+      <img src="img/7131064467_8be94656-98b5-4620-b9f6-30c681b283dd.png" alt="" class="rodape__logo">
+      <address class="rodape__endereco">
+        <p class="rodape__titulo">Endereço</p>
+        <span>São Paulo</span>
+        Rua Anita Garibaldi, 33, 13<br>
+        Sé<br>
+        Telefone: (11) 99875-2201<br>
+      </address>
+      <div>
+        <p class="rodape__titulo">Formas de Pagamento</p>
+        <img src="img/bandeiras_cartoes.png" alt="">
+        <p class="rodape__titulo">Redes Sociais</p>
+        <i class="fa-brands fa-instagram rodape__social rodape__social--insta"></i>
+        <i class="fa-brands fa-facebook rodape__social rodape__social--face"></i>
+        <i class="fa-brands fa-twitter rodape__social rodape__social--twitter"></i>
+        <i class="fa-brands fa-whatsapp-square rodape__social rodape__social--whats"></i>
+      </div>
+    </footer>
+    <script src="js/modal-cadastro.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

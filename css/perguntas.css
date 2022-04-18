@@ -1,0 +1,27 @@
+.perguntas__container {
+  width: 70%;
+  margin: auto;
+}
+
+.perguntas__titulo {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+.perguntas__titulo-seguinte {
+  color: var(--light);
+}
+
+.perguntas__lista {
+  margin-top: 4rem
+}
+
+.perguntas__item {
+  border-bottom: 1px solid #2E2E2E;
+  padding: 2rem 0;
+}
+
+.perguntas__link {
+  color: var(--light);
+  font-weight: 500;
+}
