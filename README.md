@@ -1,5 +1,5 @@
 # Site Leilão de Games e Periféricos
-## Projeto da Faculdade sobre um site de Leilão
+## Projeto da Faculdade
 
 O site desenvolvido terá como objetivo leiloar artigos eletrônicos voltados para games.
 
@@ -22,7 +22,7 @@ cadastrada junto aos orgãos de cobranças.
 
 ## `Página Home`
 
-![Home da Página](PrintTelas/Home.PNGHome.PNG)
+![Home da Página](PrintTelas/Home.PNG)
 
 ## `Página Cadastro de Produto`
 
@@ -35,5 +35,3 @@ cadastrada junto aos orgãos de cobranças.
 ## `Página Produto`
 
 ![Página Produto](PrintTelas/Produto.PNG)
-
-`CAdastro de Produto`
